@@ -24,12 +24,16 @@ Desktop
 	- this means that each OS user is 100% segregated and so you can hand your laptop to someone else using it and they can see any of your data or even the binaries.
 
 
-## Useful
+## CI
 
-Bazel 
+Use Bazel
+ 
 gomobile: https://github.com/znly/rules_gomobile
-go: https://github.com/bazelbuild/rules_go
 dart: NONE FOUND: Watch here: https://github.com/bazelbuild/bazel/issues/10207
 
-
+- bazel deps:
+	- io_bazel_rules_go: https://github.com/bazelbuild/rules_go
+	- build_bazel_rules_apple: https://github.com/bazelbuild/rules_apple
+	- build_bazel_rules_swift: https://github.com/bazelbuild/rules_swift
+	- build_bazel_apple_support: https://github.com/bazelbuild/apple_support
 

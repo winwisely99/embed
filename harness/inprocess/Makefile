@@ -29,7 +29,12 @@ print:
 	@echo
 
 
+
+bootstrap:
+	# move to bootstrap repo later
+	
 dep:
 	go get -u github.com/DimitarPetrov/stegify
+
 
 
