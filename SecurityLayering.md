@@ -1,15 +1,12 @@
 # Security Layering
 
-Layers
+## Layers / RINGS
 
+Users can Promote other users into a higher security ring.
+The higher the security the harder to get invited in and to use.
+For example Ring B could require a Bluetooth based Key Pairing. IE you met in person to pair.
 
-
-WIRE
-- Tillerman handle: Still
-- Moved Holding company to US now :(
-
-	3rd Thurday meeting
-
+Rings are better than lots of knobs because users screw them up. Telegram and Hong kong is a perfect example.
 
 
 ## Threat Models
@@ -19,7 +16,7 @@ WIRE
 Properties typically are:
 
 - Social Structure
-	- Gas Lighting cyber warefare, etc
+	- Gas Lighting cyber warfare, etc
 	- Social Hacking
 	- diminish their ability to operate.
 - Information, planning
