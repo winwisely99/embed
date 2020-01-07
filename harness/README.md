@@ -37,3 +37,15 @@ dart: NONE FOUND: Watch here: https://github.com/bazelbuild/bazel/issues/10207
 	- build_bazel_rules_swift: https://github.com/bazelbuild/rules_swift
 	- build_bazel_apple_support: https://github.com/bazelbuild/apple_support
 
+## LIBS
+
+I just tested these.
+
+Its a way to model using GRPC but run the two endpoints in process, and so no need a port based endpoint.
+
+SO one side is golang embedded on the Flutter side and the other is on the local Service side.
+
+https://github.com/fullstorydev/grpchan
+&
+https://github.com/jhump/goprotoc
+
