@@ -37,15 +37,38 @@ dart: NONE FOUND: Watch here: https://github.com/bazelbuild/bazel/issues/10207
 	- build_bazel_rules_swift: https://github.com/bazelbuild/rules_swift
 	- build_bazel_apple_support: https://github.com/bazelbuild/apple_support
 
-## LIBS
+## Compiler approaches
 
-I just tested these.
+Compiling golang to work on Mobiles, Desktop and Web from a single code base.
 
-Its a way to model using GRPC but run the two endpoints in process, and so no need a port based endpoint.
+These are golang GUI systems but the compiler approaches can be used to build the golang out of process Service.
 
-SO one side is golang embedded on the Flutter side and the other is on the local Service side.
+Fyne
+- Web: https://fyne.io/
+- Code: https://github.com/fyne-io/fyne
 
-https://github.com/fullstorydev/grpchan
-&
-https://github.com/jhump/goprotoc
+gioui
+- Web: https://gioui.org/
+- Is Faster because it uses the GPU to do heavy duty
 
+FFI can also be used for piping / IPC
+
+MAYN: https://pub.dev/packages?q=dependency%3Affi&sort=updated
+
+https://github.com/dart-interop/ffi_tool
+- gens the dart code from the c code. nice
+
+https://github.com/dart-interop
+- OS repo, etc
+
+https://github.com/CanonicalLtd/unix_domain_socket.dart
+- another useful channel
+
+
+
+## Process Management approahes
+
+https://pub.dev/packages/workmanager
+- a wrapper around Android's WorkManager and iOS' performFetchWithCompletionHandler, effectively enabling headless execution of Dart code in the background.
+- SO the Flutter code does not block the GUI thread when calling the Background process.
+- But also useful on the Golang out of process side also. Need to check..

@@ -6,6 +6,13 @@ And we need GRPC to make the Clients agnostic !
 
 So it can be used to make using a P2P network much easier.
 
+
+https://github.com/fullstorydev/grpchan
+
+&
+
+https://github.com/jhump/goprotoc
+
 Developer Dashboard
 https://github.com/fullstorydev/grpcui
 - Allows you to quickly see the effects and play with an API
