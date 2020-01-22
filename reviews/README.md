@@ -8,6 +8,7 @@ Cure53
 - NATS used them
 
 Kudelski Security
+
 - https://www.kudelskisecurity.com/
 - Wire used them
 
