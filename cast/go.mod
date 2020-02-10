@@ -1,0 +1,5 @@
+module github.com/winwisely99/embed/cast
+
+go 1.13
+
+require github.com/vishen/go-chromecast v0.0.14

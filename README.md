@@ -1,13 +1,17 @@
 # embed
 
-Embedder code written in golang.
+This is our Best Practice Architecture that meets our goals.
 
-Used for all services provided to clients.
+Packages ( See repo ) use embed and the Architecture is provides.
+
+Harness ( this repo - see Folder) is our Best practice app to show how it works and refine it.
+
+Code written in golang with Flutter.
 
 Why ?
 
-- Flutter is great at GUI
-- Golang is great at networking.
+- Flutter is great at GUI. (MANY Foreground)
+- Golang is great at networking. (Singleton Background)
 
 
 ## Run as a Background Service

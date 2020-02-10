@@ -2,6 +2,8 @@
 
 We need to use a Webview on Desktop because WebRTC and Video does not work on FLutter Desktop yet.
 
+We have a pathway to not use Webview but it relies on using a cusotm Flutter and we dont have time to take on that risk yet.
+
 The only way is from the main go-flutter app to open another window, because we cant composite the Webview inside go-flutter.
 
 SO its a hack if you want to call it that but not so bad because
