@@ -1,5 +1,57 @@
 # harness
 
+We need a way to have the app have a background Services so that new messages can bring up a Notification.
+
+THis is a very common problem with building real apps.
+
+Here is the current approach that based on research does work.
+
+## Mobile 
+
+It is impossible to have a Background Service, but you can have a 15 minute wake up approach.
+
+The 15 minutes is the guaranteed maximum delay.
+
+https://github.com/transistorsoft/flutter_background_fetch
+
+example: https://github.com/transistorsoft/flutter_background_geolocation
+
+---
+
+Flutter / Golang IPC:
+
+The background can be golang still that is compiled in as a arb ( andorid) and ipa ( ios).
+
+Golang uses gomobile bind. See the Folder example.
+
+## Desktop 
+
+There are no issues with having a real background Service on Desktop.
+
+Flutter Desktop does not support Video and WebRTC so will use a WebView and so essentially be running Flutter Web.
+- There is a nice golang based wrapper. See the Folder.
+
+
+Flutter / Golang IPC:
+
+Its easy as its just a standard service running in the background with a GRPC API between the two.
+
+System tray works well and avoids admin rights. Google does this for Google Chrome and just sets a startup flag in the users account.
+- It means that each OS user is 100% segregated and so you can hand your laptop to someone else using it and they can see any of your data or even the binaries.
+
+
+
+
+## Web
+
+Flutter can build PWA'a and this means that we can use Service worker. 
+
+But that only works if the app is open.
+
+
+
+
+
 ## In Process
 
 Mobile
@@ -19,9 +71,6 @@ Mobile
 
 Desktop
 
-- system tray works well and avoids admin rights. Google does this for Google Chrome and just sets a startup flag in the users account.
-
-	- this means that each OS user is 100% segregated and so you can hand your laptop to someone else using it and they can see any of your data or even the binaries.
 
 
 ## CI

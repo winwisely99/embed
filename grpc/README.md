@@ -6,6 +6,8 @@ And we need GRPC to make the Clients agnostic !
 
 So it can be used to make using a P2P network much easier.
 
+The following are links to libs to show how to do it.
+
 
 https://github.com/fullstorydev/grpchan
 

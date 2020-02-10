@@ -8,7 +8,7 @@ AND_KEYSTORE_APP_NAME=main
 AND_KEYSTORE_FSPATH=$(PWD)/_keys/$(AND_KEYSTORE_APP_NAME)
 
 DEP_LIB=github.com/DimitarPetrov/stegify
-DEP_FSAPTH=$(GOAPTH)/src/$(DEP_LIB)
+DEP_FSAPTH=$(GOPATH)/src/$(DEP_LIB)
 
 print:
 
@@ -23,6 +23,11 @@ print:
 	@echo
 
 	@echo
+	@echo DEP_LIB: $(DEP_LIB)
+	@echo DEP_FSAPTH: $(DEP_FSAPTH)
+	@echo
+
+	@echo
 	@echo SIGNING --
 	@echo AND_KEYSTORE_APP_NAME: $(AND_KEYSTORE_APP_NAME)
 	@echo AND_KEYSTORE_FSPATH: $(AND_KEYSTORE_FSPATH)
@@ -31,9 +36,14 @@ print:
 
 bootstrap:
 	# move to bootstrap repo later
-	
+
 dep:
-	go get -u github.com/DimitarPetrov/stegify
+	GO111MODULE=OFF go get $(DEP_LIB)
+
+run:
+	cd $(DEP_FSAPTH) && go mod init
+	go run $(DEP_FSAPTH)
+
 
 
 
