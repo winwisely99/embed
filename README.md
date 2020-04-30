@@ -1,17 +1,15 @@
 # embed
 
-This is our Best Practice Architecture that meets our goals.
+Experimental and broken for now.
 
-Packages ( See repo ) use embed and the Architecture is provides.
+This is a golang layer that is embedded inside the client.
 
-Harness ( this repo - see Folder) is our Best practice app to show how it works and refine it.
+It allows:
 
-Code written in golang with Flutter.
-
-Why ?
-
-- Flutter is great at GUI. (MANY Foreground)
-- Golang is great at networking. (Singleton Background)
+- the client to speak different transports for exotic security aspects
+- run background task without the app open:
+	- Flutter is great at GUI. (MANY Foreground)
+	- Golang is great at networking. (Singleton Background)
 
 
 ## Run as a Background Service
