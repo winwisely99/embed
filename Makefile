@@ -1,6 +1,6 @@
 
 # git include
-include ../packages/boilerplate/git.mk
+include ../packages/boilerplate/gitr.mk
 
 # remove the "v" prefix
 VERSION ?= $(shell echo $(TAGGED_VERSION) | cut -c 2-)
@@ -9,6 +9,6 @@ VERSION ?= $(shell echo $(TAGGED_VERSION) | cut -c 2-)
 
 print: ## print
 
-	$(MAKE) git-print
+	$(MAKE) gitr-print
 
 
